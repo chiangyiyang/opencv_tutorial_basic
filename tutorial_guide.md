@@ -87,3 +87,10 @@
 * **效能優化**: 在迴圈中加入了面積過濾 (`area < 1000`)，以確保程式不會被微小的背景雜訊干擾。
 
 ---
+
+## 🗺️ 測繪與空間資訊進階教學
+如果你對地理資訊 (GIS) 或遙測 (Remote Sensing) 有興趣，可以查看專屬教學：
+*   **[tutorial_guide_geomatics.md](file:///d:/Projects/CCIT/opencv_tutorial/tutorial_guide_geomatics.md)**：包含 NDVI 衛星影像運算與正射校正原理。
+
+---
+希望這些說明能讓你更深入了解 OpenCV 的運作方式！
