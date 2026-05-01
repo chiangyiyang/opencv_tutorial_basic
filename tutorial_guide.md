@@ -88,6 +88,26 @@
 
 ---
 
+## 🚀 09_yolo_image.py - YOLO 深度學習物件偵測 (圖片)
+
+帶領學生進入強大的深度學習領域，使用業界最流行的 YOLO (You Only Look Once) 模型。
+
+* **`from ultralytics import YOLO`**: 我們使用 `ultralytics` 套件，它把複雜的神經網路操作簡化成了幾行程式碼。
+* **`model = YOLO('yolov8n.pt')`**: 載入 YOLOv8 的 nano 版本。這是最輕量、最快的版本，非常適合在沒有高級顯示卡的筆電上執行。程式會自動下載模型檔案。
+* **`results = model(img)`**: 進行推論 (Inference)。這短短一行，模型就完成了尋找特徵、分類和計算位置等複雜的工作。
+* **`results[0].plot()`**: 這是 `ultralytics` 提供的超方便功能，它會自動把偵測到的物件框框 (Bounding Box)、信心分數 (Confidence) 和類別名稱畫在圖片上。
+
+---
+
+## 📹 09b_yolo_webcam.py - YOLO 即時物件偵測
+
+將強大的 YOLO 模型結合到 Webcam 串流中，打造真正的即時 AI 應用！
+
+* **即時推論**: 我們把 `model(frame)` 放入無限迴圈中。由於 `yolov8n.pt` 夠輕量，一般筆電的 CPU 也能達到每秒數幀 (fps) 的偵測速度。
+* **`verbose=False`**: 在迴圈中不斷推論會產生大量的終端機輸出。將 `verbose` 設為 `False` 可以讓終端機畫面保持乾淨。
+* **結合所學**: 這個範例完美結合了 `01b_hello_webcam.py` (讀取串流) 和 `09_yolo_image.py` (模型推論) 的核心概念。
+
+---
 ## 🗺️ 測繪與空間資訊進階教學
 如果你對地理資訊 (GIS) 或遙測 (Remote Sensing) 有興趣，可以查看專屬教學：
 *   **[tutorial_guide_geomatics.md](file:///d:/Projects/CCIT/opencv_tutorial/tutorial_guide_geomatics.md)**：包含 NDVI 衛星影像運算與正射校正原理。

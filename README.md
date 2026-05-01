@@ -52,6 +52,9 @@ pip install -r requirements.txt
 * **[04_filters_edges.py](file:///d:/Projects/CCIT/opencv_tutorial/04_filters_edges.py)**: 影像濾波（模糊）與邊緣偵測。
 * **[05_face_detection.py](file:///d:/Projects/CCIT/opencv_tutorial/05_face_detection.py)**: **專題一**：實現即時人臉偵測系統。
 * **[06_shape_detection.py](file:///d:/Projects/CCIT/opencv_tutorial/06_shape_detection.py)**: **專題二**：自動辨識圖片中的幾何圖形。
+* **[09_yolo_image.py](file:///d:/Projects/CCIT/opencv_tutorial/09_yolo_image.py)**: **進階專題三**：使用 YOLOv8 進行深度學習物件偵測 (圖片篇)。
+* **[09b_yolo_webcam.py](file:///d:/Projects/CCIT/opencv_tutorial/09b_yolo_webcam.py)**: **進階專題三**：使用 YOLOv8 進行深度學習物件偵測 (即時影像篇)。
+* **[yolo_custom_training_guide.md](file:///d:/Projects/CCIT/opencv_tutorial/yolo_custom_training_guide.md)**: **加碼教學**：如何蒐集資料、標註並訓練專屬於你自己的 YOLO 模型！
 
 詳細的程式碼原理解析請參考：**[範例程式詳解 (tutorial_guide.md)](file:///d:/Projects/CCIT/opencv_tutorial/tutorial_guide.md)**
 
