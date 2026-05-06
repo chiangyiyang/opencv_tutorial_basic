@@ -39,7 +39,7 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-這會自動安裝 `opencv-python` 以及處理矩陣運算用的 `numpy`。
+這會自動安裝 `opencv-python`、處理矩陣運算用的 `numpy`，以及顯示中文字會用到的 `Pillow`。
 
 ## 2. 學習目錄
 
@@ -49,6 +49,8 @@ pip install -r requirements.txt
 * **[01b_hello_webcam.py](file:///d:/Projects/CCIT/opencv_tutorial/01b_hello_webcam.py)**: 學習如何開啟 Webcam 並讀取即時畫面。
 * **[02_image_basics.py](file:///d:/Projects/CCIT/opencv_tutorial/02_image_basics.py)**: 影像的基本操作，包括轉灰階、縮放與裁剪。
 * **[03_drawing.py](file:///d:/Projects/CCIT/opencv_tutorial/03_drawing.py)**: 在圖片上畫線、畫圓、寫字，這對於標註偵測結果非常重要。
+* **[03b_chinese_text.py](file:///d:/Projects/CCIT/opencv_tutorial/03b_chinese_text.py)**: 如何在 OpenCV 畫面上顯示「中文字」。
+* **[03c_chinese_text_webcam.py](file:///d:/Projects/CCIT/opencv_tutorial/03c_chinese_text_webcam.py)**: 在即時 Webcam 畫面上疊加中文字、FPS 與操作提示。
 * **[04_filters_edges.py](file:///d:/Projects/CCIT/opencv_tutorial/04_filters_edges.py)**: 影像濾波（模糊）與邊緣偵測。
 * **[05_face_detection.py](file:///d:/Projects/CCIT/opencv_tutorial/05_face_detection.py)**: **專題一**：實現即時人臉偵測系統。
 * **[06_shape_detection.py](file:///d:/Projects/CCIT/opencv_tutorial/06_shape_detection.py)**: **專題二**：自動辨識圖片中的幾何圖形。

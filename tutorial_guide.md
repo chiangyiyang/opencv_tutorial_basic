@@ -46,6 +46,28 @@
 
 ---
 
+## 🈶 03b_chinese_text.py - 在畫面顯示中文字
+
+`cv2.putText` 內建字型無法正確顯示中文，本範例示範實務常見解法：OpenCV + Pillow。
+
+* **核心觀念**：先把 OpenCV 的 BGR 影像轉成 Pillow 可處理的 RGB 影像。
+* **`ImageFont.truetype`**：載入系統中文字型（例如微軟正黑體）。
+* **`ImageDraw.text`**：在 Pillow 影像上寫入中文，再轉回 OpenCV 顯示。
+* **字型路徑**：Windows 常見可用路徑為 `C:/Windows/Fonts/msjh.ttc`。
+
+---
+
+## 📹 03c_chinese_text_webcam.py - 即時 Webcam 中文疊加
+
+把 03b 的中文顯示方法延伸到即時影像串流，常用於教學、監控畫面資訊疊加與展示用途。
+
+* **即時串流**：透過 `cv2.VideoCapture(0)` 連續讀取 Webcam 畫面。
+* **中文覆蓋**：每個 frame 都先畫半透明底板，再用 Pillow 疊加中文，提升可讀性。
+* **效能觀察**：顯示當前 FPS，方便觀察文字疊加後的效能變化。
+* **快捷鍵**：按 `S` 儲存當前畫面，按 `Q` 結束程式。
+
+---
+
 ## 🌫️ 04_filters_edges.py - 濾波與邊緣偵測
 
 學習如何去除雜訊並抓取輪廓。
