@@ -130,6 +130,29 @@
 * **結合所學**: 這個範例完美結合了 `01b_hello_webcam.py` (讀取串流) 和 `09_yolo_image.py` (模型推論) 的核心概念。
 
 ---
+
+## 📹 09c_yolo26_webcam.py - YOLO26 即時物件偵測教案
+
+這個教案範例使用 Ultralytics 的 YOLO26 模型，重點是讓學生學會「可調參數 + 即時推論 + 教學展示資訊」三件事。
+
+* **`argparse` 參數化**: 可透過命令列調整 `--model`、`--camera`、`--conf`、`--imgsz`，方便課堂示範不同設定下的效果。
+* **`model = YOLO('yolo26n.pt')`**: 預設使用 YOLO26n 輕量模型，首次執行若本機沒有權重，會由 `ultralytics` 自動下載。
+* **FPS 疊加顯示**: 透過時間差估算即時處理速度，幫助學生理解「模型大小、解析度、效能」的取捨。
+* **互動按鍵**: 按 `Q` 結束、按 `S` 儲存當前偵測畫面，適合作為課堂成果截圖與回報素材。
+
+---
+
+## 🌐 09d_yolo26_online_video.py - YOLO26 網路影片來源偵測（含 YouTube）
+
+這個版本把輸入來源從 Webcam 改成「網路影片 URL」，適合課堂示範固定素材，不受現場攝影機環境影響。
+
+* **`--source` 參數**: 可直接指定 MP4 連結、串流網址，或 YouTube 網址。
+* **YouTube 解析**: 若來源是 YouTube，會透過 `yt-dlp` 先解析出可讀取的串流 URL，再交給 OpenCV。
+* **教學好處**: 教師可準備同一支影片讓全班重現相同偵測結果，方便比較 `conf`、`imgsz` 的效果差異。
+* **操作按鍵**: 按 `Q` 結束，按 `S` 儲存目前偵測畫面。
+
+---
+
 ## 🗺️ 測繪與空間資訊進階教學
 如果你對地理資訊 (GIS) 或遙測 (Remote Sensing) 有興趣，可以查看專屬教學：
 *   **[tutorial_guide_geomatics.md](file:///d:/Projects/CCIT/opencv_tutorial/tutorial_guide_geomatics.md)**：包含 NDVI 衛星影像運算與正射校正原理。
